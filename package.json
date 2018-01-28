@@ -1,7 +1,7 @@
 {
   "name": "gogen-solver",
   "version": "1.0.0",
-  "description": "Gogen is a solo game presented on a 5x5 grid, with a letter revealed in the first, middle and last columns and rows. A list of words is given and the player solved the puzzle by filling in the remaining 16 cells to fit the words onto the grid, traversing horizonally, vertically, or diagonally to adjascent cells. Each letter can only appears once on the grid.",
+  "description": "Gogen is a solo game presented on a 5x5 grid, with a letter revealed in the first, middle and last columns and rows. A list of words is given and the player solves the puzzle by filling in the remaining 16 cells to fit the words onto the grid, traversing horizonally, vertically, or diagonally to adjascent cells. Each letter can only appears once on the grid.",
   "main": "index.js",
   "scripts": {
     "test": "test",
