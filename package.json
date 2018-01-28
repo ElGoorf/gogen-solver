@@ -1,11 +1,11 @@
 {
   "name": "gogen-solver",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Gogen is a solo game presented on a 5x5 grid, with a letter revealed in the first, middle and last columns and rows. A list of words is given and the player solves the puzzle by filling in the remaining 16 cells to fit the words onto the grid, traversing horizonally, vertically, or diagonally to adjascent cells. Each letter can only appears once on the grid.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "solve": "node logic/solver.js"
+    "solve": "node example/solver.js"
   },
   "keywords": [
     "gogen",
@@ -13,8 +13,5 @@
     "solver"
   ],
   "author": "Hussein Duvigneau <npm@notmybase.com> (https://notmybase.com)",
-  "license": "MIT",
-  "dependencies": {
-    "webpack": "^3.10.0"
-  }
+  "license": "MIT"
 }

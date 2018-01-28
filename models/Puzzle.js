@@ -6,7 +6,7 @@ const Grid = require("../models/Grid");
 
 class Puzzle {
   constructor(grid, words) {
-    console.log('Creating new puzzle...');
+    // console.log('Creating new puzzle...');
 
     this.grid = new Grid(grid);
     this.words = words;
@@ -14,12 +14,12 @@ class Puzzle {
 
     this.setLetterPositionsFromGrid();
 
-    console.log("\n");
-    console.log("Grid:");
-    this.grid.render();
+    // console.log("\n");
+    // console.log("Grid:");
+    // this.render();
 
-    console.log("\n");
-    console.log("Words:", this.words.join(", "));
+    // console.log("\n");
+    // console.log("Words:", this.words.join(", "));
   }
 
   /**
@@ -139,12 +139,12 @@ class Puzzle {
    * does what it says on the tin (hopefully)
    */
   solve() {
-    console.log("Solving...");
+    // console.log("Solving...");
 
-    console.log("Calculating maximum distance between letters...");
+    // console.log("Calculating maximum distance between letters...");
     this.generateLetterDistanceMap();
 
-    console.log("Abra Cadabra...");
+    // console.log("Abra Cadabra...");
     while (this.grid.cellsRemaining()) {
       // console.log("Cells remaining: ", this.grid.cellsRemaining());
       Object.values(this.letters).forEach(letter => {
@@ -164,8 +164,15 @@ class Puzzle {
       //this.grid.render();
     }
 
+    // this.render();
+    // console.log("Done!");
+  }
+
+  /**
+   * to make it more accessible...
+   */
+  render() {
     this.grid.render();
-    console.log("Done!");
   }
 }
 

@@ -13,3 +13,39 @@ Standard `npm install`
 See the samples folder for an example of how to prepare data to be solved in JSON format. Remember to use "_" (underscores) in place of empty cells.
 
 `npm run solve game_name` - don't include the file extension as this is auto-appended. eg: `npm run solve ES_2018-01-26`
+
+## Example
+
+Should be self-explanatory...
+
+```ecmascript 6
+const gogen = require("gogen");
+
+const grid = [
+  ["Y", "_", "W", "_", "H"],
+  ["_", "_", "_", "_", "_"],
+  ["Q", "_", "X", "_", "D"],
+  ["_", "_", "_", "_", "_"],
+  ["T", "_", "G", "_", "C"]
+];
+
+const words = [
+  "BUG",
+  "CLING",
+  "DAMPING",
+  "FOIL",
+  "FOX",
+  "HARM",
+  "HAVOC",
+  "JAM",
+  "KEY",
+  "PEW",
+  "SQUINT",
+  "YEW"
+];
+
+const puzzle = new Gogen(grid, words);
+
+puzzle.solve();
+puzzle.render();
+```
