@@ -12,7 +12,7 @@ Standard `npm install`
 
 See the samples folder for an example of how to prepare data to be solved in JSON format. Remember to use "_" (underscores) in place of empty cells.
 
-`npm run solve game_name` - don't include the file extension as this is auto-appended. eg: `npm run solve ES_2018-01-26`
+`npm run solve game_name` - don't include the file extension as this is auto-appended. eg: `npm run solve ES_2018-01-26` will solve **samples/ES_2018-01-26.json**
 
 ## Example
 
