@@ -28,7 +28,7 @@ See the `samples` inside `@gogen-solver/samples` for an example of how to prepar
 
 ### Examples
 
-With `@gogens-solver/examples` set up, enter either:
+With `@gogen-solver/examples` set up, enter either:
 
 `yarn example1` to quickly see it in action with a predefined sample,
 
