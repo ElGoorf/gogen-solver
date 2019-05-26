@@ -1,5 +1,5 @@
 {
-  "description": "Sample from London Evening Standard: JAn 26th 2018",
+  "description": "London Evening Standard: Jan 26th 2018",
   "grid": [
     ["Y", "_", "W", "_", "H"],
     ["_", "_", "_", "_", "_"],
@@ -20,5 +20,12 @@
     "PEW",
     "SQUINT",
     "YEW"
+  ],
+  "solution": [
+    ["Y", "K", "W", "R", "H"],
+    ["S", "E", "M", "A", "J"],
+    ["Q", "P", "X", "V", "D"],
+    ["B", "U", "I", "O", "F"],
+    ["T", "N", "G", "L", "C"]
   ]
 }

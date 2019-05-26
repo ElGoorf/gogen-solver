@@ -1,8 +1,19 @@
 # gogen-solver
 
-Gogen is a solo game presented on a 5x5 grid, with a letter revealed in the first, middle and last columns and rows. A list of words is given and the player solves the puzzle by filling in the remaining 16 cells to fit the words onto the grid, traversing horizonally, vertically, or diagonally to adjascent cells. Each letter can only appears once on the grid.
+Gogen is a solo game presented on a 5x5 grid, with a letter revealed in the first, middle and last columns and rows. A list of words is given and the player solves the puzzle by filling in the remaining 16 cells to fit the words onto the grid, traversing horizontally, vertically, or diagonally to adjacent cells. Each letter can only appears once on the grid.
 
-My local paper has a daily Gogen, and I've mastered the process of solving them, hence I thought I'd try coding a script to apply my technique to solve the puzzles automatically.
+This monorepo provides core and ui packages to build your own gogen solver, and also provides samples to test with.
+
+## Packages
+
+### gogen-solver/core
+Core functions required to solve a gogen puzzle
+
+### gogen-solver/samples
+Some sample puzzles to test with
+
+### gogen-solver/example
+A demo app using `gogen-solver/core` with `gogen-solver/samples` through node console. 
 
 ## Installation
 

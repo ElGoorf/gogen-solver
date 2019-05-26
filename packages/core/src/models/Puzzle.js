@@ -1,8 +1,8 @@
 /**
  * Created by Hussein on 27/01/2018.
  */
-const Letter = require("../models/Letter");
-const Grid = require("../models/Grid");
+const Letter = require("./Letter");
+const Grid = require("./Grid");
 
 class Puzzle {
   constructor(grid, words) {

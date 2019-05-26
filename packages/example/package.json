@@ -1,0 +1,14 @@
+{
+  "name": "@gogen-solver/example",
+  "description": "Example of how to use `@gogen-solver/core` with node, using a sample from `@gogen-solver/samples`",
+  "version": "0.0.0",
+  "main": "src/index.js",
+  "license": "unlicensed",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@gogen-solver/core": "^0.0.0",
+    "@gogen-solver/samples": "^0.0.0"
+  }
+}
