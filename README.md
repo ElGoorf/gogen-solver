@@ -6,57 +6,32 @@ This monorepo provides core and ui packages to build your own gogen solver, and 
 
 ## Packages
 
-### gogen-solver/core
-Core functions required to solve a gogen puzzle
+### @gogen-solver/core
+Core functions required to solve a gogen puzzle.
 
-### gogen-solver/samples
-Some sample puzzles to test with
+### @gogen-solver/samples
+Some sample puzzles to test with.
 
-### gogen-solver/example
-A demo app using `gogen-solver/core` with `gogen-solver/samples` through node console. 
+### @gogen-solver/example
+A demo app using `@gogen-solver/core` with `@gogen-solver/samples` through node console. 
+
+### @gogen-solver/react
+Coming next - UI components for React app interface.
 
 ## Installation
 
-Standard `npm install`
+Standard `npm install` / `yarn add` `@gogen-solver/core` and then whatever libraries you require.
 
 ## Try it out
 
-See the samples folder for an example of how to prepare data to be solved in JSON format. Remember to use "_" (underscores) in place of empty cells.
+See the `samples` inside `@gogen-solver/samples` for an example of how to prepare data to be solved in JSON format. a JSONSchema doc is provided. Remember to use "_" (underscores) in place of empty cells.
 
-`npm run solve game_name` - don't include the file extension as this is auto-appended. eg: `npm run solve ES_2018-01-26` will solve **samples/ES_2018-01-26.json**
+### Examples
 
-## Example
+With `@gogens-solver/examples` set up, enter either:
 
-Should be self-explanatory...
+`yarn example1` to quickly see it in action with a predefined sample,
 
-```ecmascript 6
-const gogen = require("gogen");
+or
 
-const grid = [
-  ["Y", "_", "W", "_", "H"],
-  ["_", "_", "_", "_", "_"],
-  ["Q", "_", "X", "_", "D"],
-  ["_", "_", "_", "_", "_"],
-  ["T", "_", "G", "_", "C"]
-];
-
-const words = [
-  "BUG",
-  "CLING",
-  "DAMPING",
-  "FOIL",
-  "FOX",
-  "HARM",
-  "HAVOC",
-  "JAM",
-  "KEY",
-  "PEW",
-  "SQUINT",
-  "YEW"
-];
-
-const puzzle = new Gogen(grid, words);
-
-puzzle.solve();
-puzzle.render();
-```
+`yarn example2 ES_2018-01-26` for an example of specifying a sample to use. Don't bother to include the `.json` extension
