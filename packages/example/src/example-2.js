@@ -1,16 +1,20 @@
-const Gogen = require('@gogen-solver/core');
-const samples = require('@gogen-solver/samples').samples;
-const render = require('./render');
+/*
+  Example 2
 
-console.log('samples', samples);
+  Demonstrates option to load all samples for later decision making
+ */
+
+const Gogen = require('@gogen-solver/core');
+const samples = require('@gogen-solver/samples');
+const render = require('./render');
 
 console.log("Running Gogen Solver");
 
 const puzzleName = `${process.argv[2]}.json`;
 
-console.log(puzzleName);
-
 const puzzleData = samples[puzzleName];
+
+console.log(puzzleData.description);
 
 const {words, grid} = puzzleData;
 
