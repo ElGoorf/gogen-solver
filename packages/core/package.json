@@ -1,6 +1,6 @@
 {
   "name": "@gogen-solver/core",
-  "version": "0.0.0",
+  "version": "0.0.1-alpha.0",
   "src": "./src/index.js",
   "description": "Core function to solve Gogen puzzles",
   "author": "Hussein Duvigneau <hussein@notmybase.com>",
