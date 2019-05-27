@@ -1,7 +1,7 @@
 {
   "name": "@gogen-solver/example",
   "description": "Example of how to use `@gogen-solver/core` with node, using a sample from `@gogen-solver/samples`",
-  "version": "0.0.1-alpha.0",
+  "version": "0.0.2-alpha.0",
   "main": "src/example-1.js",
   "license": "unlicensed",
   "scripts": {
@@ -9,7 +9,7 @@
     "example2": " node src/example-2.js"
   },
   "dependencies": {
-    "@gogen-solver/core": "^0.0.1-alpha.0",
-    "@gogen-solver/samples": "^0.0.1-alpha.0"
+    "@gogen-solver/core": "^0.0.2-alpha.0",
+    "@gogen-solver/samples": "^0.0.2-alpha.0"
   }
 }
