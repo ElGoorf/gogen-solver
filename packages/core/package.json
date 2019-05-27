@@ -1,0 +1,31 @@
+{
+  "name": "@gogen-solver/core",
+  "version": "0.0.1-alpha.0",
+  "src": "./src/index.js",
+  "description": "Core function to solve Gogen puzzles",
+  "author": "Hussein Duvigneau <hussein@notmybase.com>",
+  "homepage": "https://github.com/ElGoorf/gogen-solver",
+  "main": "./src/index.js",
+  "module": "src/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "prebuild": "jest --coverage",
+    "build": "webpack --mode production",
+    "test": "jest --coverage --verbose --colors"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElGoorf/gogen-solver"
+  },
+  "devDependencies": {
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@gogen-solver/samples",
+  "version": "0.0.1-alpha.0",
+  "description": "Sample Gogen puzzles",
+  "author": "Hussein Duvigneau <hussein@notmybase.com>",
+  "homepage": "https://github.com/ElGoorf/gogen-solver",
+  "main": "./samples/index.js",
+  "module": "./samples",
+  "files": [
+    "./samples"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ElGoorf/gogen-solver"
+  },
+  "scripts": {
+    "build": "echo 'Samples Package is served as-is (no building to be done)'"
+  },
+  "dependencies": {
+    "copy-webpack-plugin": "^5.0.3"
+  }
+}

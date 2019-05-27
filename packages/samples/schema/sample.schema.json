@@ -1,0 +1,46 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "Gogen Schema",
+  "required": [
+    "grid",
+    "words"
+  ],
+  "properties": {
+    "description": {
+      "type": "string",
+      "title": "Description Schema",
+      "description": "Eg. source of the sample",
+      "examples": ["London Evening Standard: Jan 26th 2018"]
+    },
+    "grid": {
+      "type": "array",
+      "title": "Grid Schema",
+      "description": "2D Array of letters.",
+      "items": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "default": "_",
+          "pattern": "^[a-zA-Z_]$"
+        }
+      }
+    },
+    "words": {
+      "type": "array",
+      "title": "Words Schema",
+      "description": "List of words given for the puzzle.",
+      "items": {
+        "type": "string",
+        "default": "",
+        "pattern": "^([a-zA-Z]*)$"
+      }
+    },
+    "solution": {
+      "$ref": "#/properties/grid",
+      "description": "The grid, but solved."
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "extends": ["tslint:latest", "stylelint-config-standard", "stylelint-config-styled-components"],
+  "rules": {
+    "semicolon": "single"
+  },
+  "processors": ["stylelint-processor-styled-components"],
+}
